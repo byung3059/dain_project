@@ -1,0 +1,67 @@
+:root {
+    --pri-color: #61A0D1;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+body {
+    color: var(--white-color);
+    background: var(--black-color);
+}
+
+.inner {
+    max-width: 1770px;
+    margin: 0 auto;
+}
+
+.tit h2 {
+    margin: 0 0 16px 0;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.tit p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.tit h2 span {
+    color: var(--pri-color);
+}
+
+@media(max-width: 1771px) {
+    .inner {
+        padding: 0 80px;
+    }
+}
+
+@media(max-width: 1025px) {
+    .inner {
+        padding: 0 16px;
+    }
+
+    .tit h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .tit p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width: 480px) {
+    .tit h2 {
+        font-size: 24px;
+        line-height: 24px;
+        margin: 0 0 8px 0 !important;
+    }
+
+    .tit p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
